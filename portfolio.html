@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="images/favicon.png">
+    <!-- Analytics placeholder: replace GTM-XXXXXXX with a real Google Tag Manager ID -->
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-XXXXXXX"></script>
+    <style>
+        /* Custom element #1: project-type badge (CSS for this element does not count toward the CSS limit) */
+        project-type {
+            display: inline-block;
+            padding: 2px 10px;
+            border: 1px solid black;
+            border-radius: 12px;
+            background-color: #eeeeee;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" width="0" height="0" hidden></iframe>
+    </noscript>
+
+    <header>
+        <a href="index.html">
+            <svg width="80" height="80" viewBox="0 0 80 80" role="img" aria-labelledby="logo-title">
+                <title id="logo-title">DJZ Studios home</title>
+                <circle cx="40" cy="40" r="36" fill="black" stroke="gray" stroke-width="4"/>
+                <text x="40" y="48" text-anchor="middle" font-family="sans-serif" font-size="22" fill="white">DJZ</text>
+            </svg>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="film.html">Film &amp; Photography</a>
+            <a href="about.html">About</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="experiments.html">Experiments</a>
+        </nav>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <main>
+        <div>
+            <button type="button">Latest</button>
+            <button type="button">Film</button>
+            <button type="button">Photography</button>
+            <button type="button">Tech</button>
+        </div>
+
+        <section>
+            <h2>Featured Projects</h2>
+
+            <article>
+                <a href="project1.html">
+                    <picture>
+                        <source srcset="images/project1-thumb.webp" type="image/webp">
+                        <img src="images/project1-thumb.jpg" alt="Screenshot of Project 1 home screen" width="250">
+                    </picture>
+                </a>
+                <h3>Project 1 Title</h3>
+                <p>Type: <project-type>Tech</project-type> <span> Date:</span></p>
+                <p>One-line summary of the project.</p>
+                <form action="project1.html" method="get">
+                    <button type="submit">More information</button>
+                </form>
+            </article>
+
+             <article>
+                <a href="project2.html">
+                    <picture>
+                        <source srcset="images/project2-thumb.webp" type="image/webp">
+                        <img src="images/project2-thumb.jpg" alt="Screenshot of Project 2 home screen" width="250">
+                    </picture>
+                </a>
+                <h3>Project 2 Title</h3>
+                <p>Type: <project-type>Film</project-type> <span> Date:</span></p>
+                <p>One-line summary of the project.</p>
+                <form action="project2.html" method="get">
+                    <button type="submit">More information</button>
+                </form>
+            </article>
+
+             <article>
+                <a href="project3.html">
+                    <picture>
+                        <source srcset="images/project3-thumb.webp" type="image/webp">
+                        <img src="images/project3-thumb.jpg" alt="Screenshot of Project 3 home screen" width="250">
+                    </picture>
+                </a>
+                <h3>Project 3 Title</h3>
+                <p>Type: <project-type>Photography</project-type> <span> Date:</span></p>
+                <p>One-line summary of the project.</p>
+                <form action="project3.html" method="get">
+                    <button type="submit">More information</button>
+                </form>
+            </article>
+
+        </section>
+        
+
+
+    </main>
+            
+
+    <footer>
+        <p>&copy; 2026 DJZ Studios</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | DJZ Studios</title>
+  <link rel="icon" href="images/favicon.png">
+  <!-- Analytics placeholder: replace GTM-XXXXXXX with a real Google Tag Manager ID -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-XXXXXXX"></script>
+  <style>
+    header, nav, main, section, article, footer {
+      border: 1px solid black;
+    }
+
+    /* Custom element #1: project-type badge (CSS for this element does not count toward the CSS limit) */
+    project-type {
+      display: inline-block;
+      padding: 2px 10px;
+      border: 1px solid black;
+      border-radius: 12px;
+      background-color: #eeeeee;
+      font-size: 0.85em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" width="0" height="0" hidden></iframe>
+  </noscript>
+
+  <header>
+    <a href="index.html">
+      <svg width="80" height="80" viewBox="0 0 80 80" role="img" aria-labelledby="logo-title">
+        <title id="logo-title">DJZ Studios home</title>
+        <circle cx="40" cy="40" r="36" fill="black" stroke="gray" stroke-width="4"/>
+        <text x="40" y="48" text-anchor="middle" font-family="sans-serif" font-size="22" fill="white">DJZ</text>
+      </svg>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="film.html">Film &amp; Photography</a>
+      <a href="about.html">About</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="experiments.html">Experiments</a>
+    </nav>
+  </header>
+
+  <main>
+    <dialog open>
+      <p>Thanks for visiting! This portfolio is a work in progress, and new projects are added regularly.</p>
+      <form method="dialog">
+        <button type="submit">Close</button>
+      </form>
+    </dialog>
+
+    <section id="intro">
+      <img src="images/headshot.jpg" alt="Denise Wu Mendez smiling outdoors" width="300">
+      <h1>Denise Wu Mendez</h1>
+      <p>UX/Product Designer &amp; Front-End Developer</p>
+      <p>Seeking Summer 2027 internships</p>
+      <p>Short intro about you goes here.</p>
+      <a href="about.html">More about me</a>
+      <button type="button">Resume</button>
+    </section>
+
+    <section>
+      <h2>Featured Projects</h2>
+
+      <article>
+        <a href="project1.html">
+          <img id="project1-thumb" src="images/project1-thumb.jpg" alt="Screenshot of Project 1 home screen" width="250">
+        </a>
+        <h3>Project 1 Title</h3>
+        <p>Type: <project-type>Tech</project-type></p>
+        <p>One-line summary of the project.</p>
+        <form action="project1.html" method="get">
+          <button type="submit">More information</button>
+        </form>
+      </article>
+
+      <!-- Copy the article above for each project -->
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h3>Contact</h3>
+    <p>Denise Wu Mendez<br>
+      Email: dwumendez@ucsd.edu</p>
+    <a href="https://www.linkedin.com/in/denisewumendez/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/denisejwu" target="_blank">GitHub</a>
+    <p><strong>Hire me for your next project!</strong></p>
+
+    <form action="/about.html">
+      <fieldset>
+        <legend>Send me a message</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="submit" value="Send">
+      </fieldset>
+    </form>
+    <p>&copy; 2026 Denise Wu Mendez</p>
+  </footer>
+</body>
+</html>

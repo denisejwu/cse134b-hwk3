@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film &amp; Photography | DJZ Studios</title>
+    <link rel="icon" href="images/favicon.png">
+    <!-- Analytics placeholder: replace GTM-XXXXXXX with a real Google Tag Manager ID -->
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-XXXXXXX"></script>
+    <style>
+        /* Custom element #1: project-type badge (CSS for this element does not count toward the CSS limit) */
+        project-type {
+            display: inline-block;
+            padding: 2px 10px;
+            border: 1px solid black;
+            border-radius: 12px;
+            background-color: #eeeeee;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" width="0" height="0" hidden></iframe>
+    </noscript>
+
+    <header>
+        <a href="index.html">
+            <svg width="80" height="80" viewBox="0 0 80 80" role="img" aria-labelledby="logo-title">
+                <title id="logo-title">DJZ Studios home</title>
+                <circle cx="40" cy="40" r="36" fill="black" stroke="gray" stroke-width="4"/>
+                <text x="40" y="48" text-anchor="middle" font-family="sans-serif" font-size="22" fill="white">DJZ</text>
+            </svg>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="film.html">Film &amp; Photography</a>
+            <a href="about.html">About</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="experiments.html">Experiments</a>
+        </nav>
+        <h1>Film & Photography</h1>
+    </header>
+
+    <main>
+        <div>
+            <button type="button">Latest</button>
+            <button type="button">Film/Video</button>
+            <button type="button">Photography</button>
+        </div>
+
+        <section>
+            <h2>Featured Projects</h2>
+
+            <section>
+                <h3>Project 1 Title</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="Project 1 Title video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><em>Caption</em> for the film/video project.</p>
+                <p>Type: <project-type>Film/Video</project-type> <span> Date:</span></p>
+                <p>One-line summary of the project.</p>
+                <button type="button">More information</button>
+            </section>
+
+             <section>
+                <picture>
+                    <source srcset="images/project2-thumb.webp" type="image/webp">
+                    <img src="images/project2-thumb.jpg" alt="Screenshot of Project 2 Photo" width="250">
+                </picture>
+                <h3>Project 2 Title</h3>
+                <p>Type: <project-type>Photography</project-type> Black & White <span> Date:</span></p>
+                <p><b><em>Caption</em> for the photography project.</b></p>
+                <p>A study in <i lang="it">chiaroscuro</i>, the strong contrast between light and shadow.</p>
+                <button type="button">More information</button>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DJZ Studios</p>
+    </footer>
+</body>
+</html>
