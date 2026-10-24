@@ -8,22 +8,7 @@
   <!-- Analytics placeholder: replace GTM-XXXXXXX with a real Google Tag Manager ID -->
   <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-XXXXXXX"></script>
   <link rel="stylesheet" href="index.css">
-  <style>
-    header, nav, main, section, article, footer {
-      border: 1px solid black;
-    }
 
-    /* Custom element #1: project-type badge (CSS for this element does not count toward the CSS limit) */
-    project-type {
-      display: inline-block;
-      padding: 2px 10px;
-      border: 1px solid black;
-      border-radius: 12px;
-      background-color: #eeeeee;
-      font-size: 0.85em;
-      font-weight: bold;
-    }
-  </style>
 </head>
 <body>
   <noscript>
@@ -44,24 +29,22 @@
       <a href="film.html">Film &amp; Photography</a>
       <a href="about.html">About</a>
       <a href="index.html#contact">Contact</a>
-      <a href="experiments.html">Experiments</a>
     </nav>
   </header>
 
   <main>
     <dialog open>
-      <p>Thanks for visiting! This portfolio is a work in progress, and new projects are added regularly.</p>
+      <p class="dialog-text">Thanks for visiting! This portfolio is a work in progress, and new projects are added regularly.</p>
       <form method="dialog">
-        <button type="submit">Close</button>
+        <button class="dialog-btn" type="submit">Close</button>
       </form>
     </dialog>
 
     <section id="intro">
-      <img src="images/headshot.jpg" alt="Denise Wu Mendez smiling outdoors" width="300">
+      <img class="my-pic" src="images/headshot.jpg" alt="Denise Wu Mendez smiling outdoors" width="300">
       <h1>Denise Wu Mendez</h1>
-      <p>UX/Product Designer &amp; Front-End Developer</p>
-      <p>Seeking Summer 2027 internships</p>
-      <p>Short intro about you goes here.</p>
+      <p class="job-titles">UX/Product Designer &amp; Front-End Developer | <span> Seeking Summer 2027 internships</span></p>
+      <p class="intro-text">Short intro about you goes here.</p>
       <a href="about.html">More about me</a>
       <button type="button">Resume</button>
     </section>
