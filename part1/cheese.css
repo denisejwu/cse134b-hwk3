@@ -1,0 +1,26 @@
+body{
+    font-family: fantasy;
+    color:teal;
+    line-height: 1.5rem;
+    max-width:25rem;
+    margin: 0 auto;
+    padding:.5rem;
+}
+h1{
+    color:darkblue;
+}
+h2{
+    color:darkgreen;
+}
+.latin{
+    font-style: italic;
+}
+
+#warning{
+    color:red;
+}
+blockquote{
+    border: 2px solid brown;
+    margin: 20px 0;
+    padding: 15px;
+}
