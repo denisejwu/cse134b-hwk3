@@ -7,18 +7,8 @@
     <link rel="icon" href="images/favicon.png">
     <!-- Analytics placeholder: replace GTM-XXXXXXX with a real Google Tag Manager ID -->
     <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-XXXXXXX"></script>
-    <style>
-        /* Custom element #1: project-type badge (CSS for this element does not count toward the CSS limit) */
-        project-type {
-            display: inline-block;
-            padding: 2px 10px;
-            border: 1px solid black;
-            border-radius: 12px;
-            background-color: #eeeeee;
-            font-size: 0.85em;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="portfolio.css">
+    
 </head>
 <body>
     <noscript>
@@ -39,20 +29,21 @@
             <a href="film.html">Film &amp; Photography</a>
             <a href="about.html">About</a>
             <a href="index.html#contact">Contact</a>
-            <a href="experiments.html">Experiments</a>
         </nav>
-        <h1>My Portfolio</h1>
+       
     </header>
 
     <main>
-        <div>
+        <h1>My Portfolio</h1>
+        <section id="filters">
             <button type="button">Latest</button>
             <button type="button">Film</button>
             <button type="button">Photography</button>
             <button type="button">Tech</button>
-        </div>
+        </section>
 
-        <section>
+        <section class="grid">
+             
             <h2>Featured Projects</h2>
 
             <article>
@@ -63,7 +54,7 @@
                     </picture>
                 </a>
                 <h3>Project 1 Title</h3>
-                <p>Type: <project-type>Tech</project-type> <span> Date:</span></p>
+                <p><project-type>Tech</project-type> <span> Date:</span></p>
                 <p>One-line summary of the project.</p>
                 <form action="project1.html" method="get">
                     <button type="submit">More information</button>
@@ -78,7 +69,7 @@
                     </picture>
                 </a>
                 <h3>Project 2 Title</h3>
-                <p>Type: <project-type>Film</project-type> <span> Date:</span></p>
+                <p><project-type>Film</project-type> <span> Date:</span></p>
                 <p>One-line summary of the project.</p>
                 <form action="project2.html" method="get">
                     <button type="submit">More information</button>
@@ -93,7 +84,7 @@
                     </picture>
                 </a>
                 <h3>Project 3 Title</h3>
-                <p>Type: <project-type>Photography</project-type> <span> Date:</span></p>
+                <p> <project-type>Photography</project-type> <span> Date:</span></p>
                 <p>One-line summary of the project.</p>
                 <form action="project3.html" method="get">
                     <button type="submit">More information</button>
