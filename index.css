@@ -6,23 +6,29 @@ Dark Brown: #5A3E2B
 Burgundy: #6D1F1F */
 :root{
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+body{
+    margin:0;
+    background-color:#F8F4E3 ;
     
 }
 header{
     background-color: #1F4C4C;
     color:#E1C89A;
-
+   
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     padding: 1rem 2rem;
 }
+
 nav a{
     color: #E1C89A;
     text-decoration: none;
     margin-left: 1rem;
     padding: .5rem;
+    text-align: center;
 }
 nav a:hover{
     background-color: #F8F4E3;
@@ -54,11 +60,7 @@ form{
   cursor: pointer;
 }
 
-body{
-    margin: 0 auto;
-    background-color:#F8F4E3 ;
-}
-
+/* intro section */
 .my-pic{
     display:block;
     margin:0 auto;
@@ -66,16 +68,150 @@ body{
 #intro h1,.intro-text, .job-titles{
     text-align: center;
 }
+.intro-actions, .project-action{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:12px;
+    padding-right: 10rem;
+}
+.intro-actions a,
+#info-links a{
+   color: #008080;
+    border: 2px solid #008080;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+}
 
+.project-action a{
+   color:  #F8F4E3;
+    border: 2px solid #F8F4E3;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.intro-actions a:hover,
+.project-action a:hover,
+#info-links a:hover{
+    background-color: #008080;
+    color: #F8F4E3;
+    text-decoration: none;
+}
+.intro-actions button{
+    background-color:#F8F4E3;
+    color:#008080 ;
+    border: 2px solid #008080;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;  
+}
 
+/* featured section */
+#featured{
+    margin-top: 2%;
+   background-color: #1F4C4C;
+   padding: 3%;
+   color:#E1C89A;
+}
+#featured img{
+    display: block;
+    margin:0 auto;
+}
 
-/* Custom element #1: project-type badge (CSS for this element does not count toward the CSS limit) */
-/* project-type {
+project-type{
     display: inline-block;
-    padding: 2px 10px;
-    border: 1px solid black;
-    border-radius: 12px;
-    background-color: #eeeeee;
+    padding: 4px 12px;
+    border-radius: 999px;        /* pill shape */
+    background-color: #F8F4E3;
+    color: #008080;
     font-size: 0.85em;
     font-weight: bold;
-} */ 
+}
+/* 
+footer */
+#contact{
+    display: block;
+    margin: 0;
+
+}
+#contact > h2,
+#contact > p,
+#info-links{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#info-links{
+    display:flex;
+    justify-content: right;
+    gap:12px;
+   
+}
+
+.message-form{
+    margin-top: 2%;
+    margin-bottom: 0;
+    background-color: #1F4C4C;
+    padding: 3%;
+    color: #E1C89A;
+}
+#hire-from{
+    max-width: 500px;
+    margin:0 auto;
+}
+
+/* The box around the form */
+.message-form fieldset{
+    border: 2px solid #E1C89A;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.message-form legend{
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+/* Text boxes */
+.message-form input[type="text"],
+.message-form input[type="email"],
+.message-form textarea{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F8F4E3;
+    color: #5A3E2B;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.message-form textarea{
+    min-height: 120px;
+    resize: vertical;   /* lets people drag it taller, not wider */
+}
+
+/* Send button */
+.message-form input[type="submit"]{
+    margin-top: 8px;
+    padding: 10px 18px;
+    border: 2px solid #E1C89A;
+    border-radius: 8px;
+    background-color: #E1C89A;
+    color: #1F4C4C;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#hire-me{
+    text-align: center;
+    font-size: larger;
+}
+

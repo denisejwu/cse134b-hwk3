@@ -1,0 +1,61 @@
+
+/* Teal: #008080
+Gold: #D4AF37
+Cream: #F8F4E3
+Dark Brown: #5A3E2B
+Burgundy: #6D1F1F */
+:root{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+body{
+    margin:0;
+    background-color:#F8F4E3 ;
+    
+}
+header{
+    background-color: #1F4C4C;
+    color:#E1C89A;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem 2rem;
+}
+
+nav a{
+    color: #E1C89A;
+    text-decoration: none;
+    margin-left: 1rem;
+    padding: .5rem;
+    text-align: center;
+}
+nav a:hover{
+    background-color: #F8F4E3;
+    color: #6D1F1F;
+    border-radius: 4px;
+}
+
+.about-me{
+    display: block;
+    margin:2%;
+}
+.about-me img{
+    display:block;
+   margin: 0 auto;
+}
+.bio{
+    background-color: #1F4C4C;
+}
+.bio-text{
+    display: block;
+    margin:2%;
+    color:#E1C89A;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.bio-text img{
+    display: block;
+    margin:0 auto;
+}
+

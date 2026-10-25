@@ -45,23 +45,28 @@
       <h1>Denise Wu Mendez</h1>
       <p class="job-titles">UX/Product Designer &amp; Front-End Developer | <span> Seeking Summer 2027 internships</span></p>
       <p class="intro-text">Short intro about you goes here.</p>
-      <a href="about.html">More about me</a>
-      <button type="button">Resume</button>
+      <section class="intro-actions">
+        <a href="about.html">More about me</a>
+        <button  type="button">Resume</button>
+      </section>
+      
     </section>
 
-    <section>
+    <section id="featured">
       <h2>Featured Projects</h2>
 
       <article>
         <a href="project1.html">
           <img id="project1-thumb" src="images/project1-thumb.jpg" alt="Screenshot of Project 1 home screen" width="250">
         </a>
-        <h3>Project 1 Title</h3>
-        <p>Type: <project-type>Tech</project-type></p>
+        <h3>Project 1 Title  <span><project-type>Tech</project-type></span></h3>
+       
         <p>One-line summary of the project.</p>
-        <form action="project1.html" method="get">
-          <button type="submit">More information</button>
-        </form>
+
+        <section class="project-action">
+            <a href="project1.html">More Information</a>
+        </section>
+       
       </article>
 
       <!-- Copy the article above for each project -->
@@ -69,26 +74,33 @@
   </main>
 
   <footer id="contact">
-    <h3>Contact</h3>
+    <h2>Contact</h2>
     <p>Denise Wu Mendez<br>
       Email: dwumendez@ucsd.edu</p>
-    <a href="https://www.linkedin.com/in/denisewumendez/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/denisejwu" target="_blank">GitHub</a>
-    <p><strong>Hire me for your next project!</strong></p>
+    
+    <section id="info-links">
+      <a href="https://www.linkedin.com/in/denisewumendez/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/denisejwu" target="_blank">GitHub</a>
+    </section>
+   
+    <section class="message-form">
+      <p id="hire-me"><strong>Hire me for your next project!</strong></p>
 
-    <form action="/about.html">
-      <fieldset>
-        <legend>Send me a message</legend>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <input type="submit" value="Send">
-      </fieldset>
-    </form>
-    <p>&copy; 2026 Denise Wu Mendez</p>
+      <form id="hire-from" action="/about.html">
+        <fieldset>
+          <legend>Send me a message</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Send">
+        </fieldset>
+      </form>
+       <p>&copy; 2026 Denise Wu Mendez</p>
+    </section>
+    
   </footer>
 </body>
 </html>
