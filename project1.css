@@ -1,0 +1,43 @@
+/* Project case study page styles. Colors, fonts, header, nav, and footer live in main.css */
+
+/* Adjacent sibling combinator (+): the "Role | Timeline | Team" line right after the page title */
+main > h1 + p{
+    margin: 0 var(--space-lg) var(--space-lg);
+    color: var(--teal);
+    font-style: italic;
+}
+
+/* Case study sections: a readable column width, centered on the page */
+main > section{
+    max-width: 50rem;
+    margin: 0 auto var(--space-xl);
+    padding: 0 var(--space-lg);
+}
+
+/* Descendant combinator: every screenshot on the page, centered */
+main img{
+    display: block;
+    margin: var(--space-md) auto;
+}
+
+/* Back to Portfolio form sits on the same line as the Next Project button */
+main > form{
+    display: inline-block;
+    margin: 0 var(--space-xs) var(--space-xl) var(--space-lg);
+}
+main > form button,
+main > button{
+    background-color: transparent;
+    color: var(--teal);
+    border: 2px solid var(--teal);
+    padding: 0.625em 1.125em;   /* em so the padding scales with the button text */
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+main > form button:hover,
+main > button:hover{
+    background-color: var(--teal);
+    color: var(--cream);
+}
